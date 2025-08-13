@@ -41,8 +41,6 @@ watch(pageSize, (newSize) => {
           exact-active-class="text-green-500"
           :to="{ name: 'about' }"
         >About</RouterLink>
-        |
-        <RouterLink :to="{ name: 'Students' }">Student</RouterLink>
       </nav>
     </header>
 
