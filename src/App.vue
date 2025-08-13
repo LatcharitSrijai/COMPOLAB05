@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { SpeedInsights } from '@vercel/speed-insights/vue'
 import { RouterLink, RouterView, useRoute, useRouter } from 'vue-router'
 import { ref, watch } from 'vue'
 import { useMessageStore } from '@/stores/message'
@@ -19,6 +20,7 @@ watch(pageSize, (newSize) => {
 </script>
 
 <template>
+  <SpeedInsights />
   <div class="text-center font-sans text-gray-700 antialiased">
     <header class="max-w-3xl mx-auto">
       <div
